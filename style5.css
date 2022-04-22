@@ -1,0 +1,188 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.mainpage{
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url(photos/certificate3.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo img{
+	width: 300px;
+	padding-left: 45px;
+}
+
+nav{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav a::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background-color: #e84118;
+	transition: 0.5s;
+}
+
+nav a:hover::after{
+	width: 100%;
+}
+
+.program{
+	text-align: center;
+	color:#fff;
+	padding: 130px 0;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+/*------------------MAP SECTION-------------------*/
+
+.maps{
+	width: 80%;
+	margin: 80px auto;
+	/*align-items: center;*/
+}
+
+/*-----------------CONTACT US---------------------*/
+
+.contact{
+	width: 80%;
+	margin: 80px auto;
+	display: flex;
+}
+
+.contact .leftsec{
+	flex-basis: 60%;
+}
+
+.contact .home{
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.contact .home .logo{
+	margin-right: 25px;
+	color: #e84118;
+}
+
+.contact .home .logo .fa{
+	font-size: 25px;
+	margin: 12.5px 0;
+}
+
+.contact .home .address h3{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.contact .home .address p{
+	font-size: 14px;
+	color: #4b4b4b;
+	letter-spacing: 1px;
+}
+
+/*----------------FORM SECTION-----------------*/
+
+
+.rightsec .mainform{
+	width: 450px;
+}
+
+.rightsec .mainform .names input{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 9px;
+	border: none;
+	box-shadow: 0.5px 0.5px 3px #747d8c;
+}
+
+.rightsec .mainform .text{
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: none;
+	box-shadow: 0.5px 0.5px 3px #747d8c;
+}
+
+.rightsec .mainform .submit input{
+	padding: 7px 30px;
+	font-size: 14px;
+	color:#e84118;
+	transition: 0.3s;
+	font-weight: 600;
+	border: 1px solid #e84118; 
+	background-color: transparent;
+	box-shadow: 2px 2px 6px #e84118;
+}
+
+.rightsec .mainform .submit input:hover{
+	background-color:#e84118;
+	color: #fff;
+}
+
+/*--------------FOOTER---------------*/
+
+.aboutus{
+	width: 80%;
+	height: 18vh;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.aboutus h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.aboutus p{
+	font-size: 14px;
+	color: #4b4b4b;
+	margin-bottom: 25px;
+}
+
+.logos a{
+	text-decoration: none;
+	color: #e84118;
+	margin: 0 13px;
+}
+
+.love{
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.love .fa{
+	color: #e84118;
+}
+
+/*---------------ANIMATION----------------*/
+
+.animate__animated{
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

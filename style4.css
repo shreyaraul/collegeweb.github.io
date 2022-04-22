@@ -1,0 +1,218 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.mainpage{
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.8),rgba(4,9,30,0.8)), url(photos/certificate3.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo img{
+	width: 300px;
+	padding-left: 45px;
+}
+
+nav{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav a::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background-color: #e84118;
+	transition: 0.5s;
+}
+
+nav a:hover::after{
+	width: 100%;
+}
+
+.program{
+	text-align: center;
+	color:#fff;
+	padding: 130px 0;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+/*-----------------MAIN CONTENT-----------------*/
+
+.certificate{
+	width: 80%;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+}
+
+.online{
+	flex-basis: 100%;
+	text-align: left;
+	overflow: hidden;
+}
+
+.online img{
+	width: 100%;
+}
+
+.online h2{
+	padding:15px 0px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.online p{
+	font-size: 14px;
+	color: #4b4b4b;
+}
+
+.offline{
+	flex-basis: 55%;
+	width: 100%;
+	margin-left: 50px;
+}
+
+.offline table{
+	width: 100%;
+}
+
+.offline .left{
+	text-align: left;
+	color: #4b4b4b; 
+	font-size: 16px;
+}
+
+.offline .right{
+	text-align: right;
+	color: #4b4b4b;
+	font-size: 16px;
+}
+
+.offline .main{
+	height: 5vh;
+	background-color: #e84118;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.offline .topbottom{
+	height: 5vh;
+	margin-top: 10px;
+}
+
+/*----------------COMMENT SECTION-------------------*/
+
+.comment{
+	width: 100%;
+	border: 1px solid #a4b0be;
+	padding: 20px;
+	margin-top: 40px;
+}
+
+.comment .username input{
+	width: 100%;
+	margin: 10px 0;
+	padding: 10px 8px;
+	background-color: #dfe4ea;
+	border: none;
+}
+
+.comment h3{
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.comment .vertical .apple{
+	width: 100%;
+	resize: vertical;
+	padding-left: 7px 5px;
+	margin: 10px 0;
+	background-color: #dfe4ea;
+	border: none;
+}
+
+.comment .post input{
+	background-color: transparent;
+	border: 1px solid #e84118; 
+	padding: 8px 20px;
+	color:#e84118;
+	transition: 0.3s;
+	font-weight: 600;
+}
+
+.comment .post input:hover{
+	background-color:#e84118;
+	color: #fff;
+}
+
+/*--------------FOOTER---------------*/
+
+.aboutus{
+	width: 80%;
+	height: 18vh;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.aboutus h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.aboutus p{
+	font-size: 14px;
+	color: #4b4b4b;
+	margin-bottom: 25px;
+}
+
+.logos a{
+	text-decoration: none;
+	color: #e84118;
+	margin: 0 13px;
+}
+
+.love{
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.love .fa{
+	color: #e84118;
+}
+
+/*---------------ANIMATION----------------*/
+
+.animate__animated{
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

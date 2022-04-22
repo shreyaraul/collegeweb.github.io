@@ -1,0 +1,370 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.mainpage{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(photos/university1.jpg);
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .logo img{
+	width: 300px;
+	padding-left: 45px;
+}
+
+nav{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav a::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background-color: #e84118;
+	transition: 0.5s;
+}
+
+nav a:hover::after{
+	width: 100%;
+}
+
+.maintext{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+	text-align: center;
+	color: #fff;
+}
+
+.maintext h1{
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+.maintext p{
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+}
+
+.maintext a{
+	text-decoration: none;
+	color: #fff;
+	border:1px solid #fff;
+	padding: 10px 30px;
+	font-size: 13px;
+	transition: 0.5s;
+}
+
+.maintext a:hover{
+	background-color: #e84118;
+	border:1px solid #e84118;
+}
+
+/*-----------COURSES-----------*/
+
+.coursesec{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.coursesec h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.coursesec p{
+	font-size: 16px;
+	color: #4b4b4b;
+	letter-spacing: 1px;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.course{
+	flex-basis:31%;
+	background-color: #ffcccc;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.course h2{
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+
+.course p{
+	font-size: 14px;
+	text-align: center;
+}
+
+.course:hover{
+	box-shadow: 0px 0px 10px grey;
+}
+
+/*-----------CAMPUS------------*/
+
+.campussec{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.campussec h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.campussec p{
+	font-size: 16px;
+	color: #4b4b4b;
+	letter-spacing: 1px;
+}
+
+.campus{
+	flex-basis:30%;
+	overflow: hidden;
+	position: relative;
+}
+
+.campus img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+}
+
+.layer{
+	width: 100%;
+	height: 100%;
+	background-color:  transparent;
+	border-radius: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.8s;
+}
+
+.layer:hover{
+	background-color:  rgba(226 , 15 , 47 , 0.65);
+}
+
+.layer h1{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+	transition: 1s;
+	opacity: 0;
+}
+
+.layer:hover h1{
+	bottom: 49%;
+	opacity: 1;
+}
+
+/*------------facilities------------*/
+
+.facility{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.facility h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.facility p{
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #4b4b4b;
+}
+
+.facilities{
+	flex-basis: 30%;
+	overflow: hidden;
+	text-align: left;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.facilities img{
+	width: 100%;
+	height: 50vh;
+	border-radius: 10px;
+}
+
+.facilities:hover{
+	box-shadow: 15px 15px 15px grey;
+}
+
+.facilities h2{
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.facilities p{
+	font-size: 14px;
+}
+
+/*----------------STUDENT"S REVIEW----------------*/
+
+.studentreview{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.studentreview h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.studentreview p{
+	font-size: 16px;
+	color: #4b4b4b;
+	letter-spacing: 1px;
+}
+
+.review{
+	flex-basis:48%;
+	background-color: #ffcccc;
+	display: flex;
+	text-align: left;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.review img{
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	margin-right: 30px;
+}
+
+.review p{
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.review h2{
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 10px;
+}
+
+.review .fa{
+	color:  #e84118;
+	padding-top: 10px;
+}
+
+/*---------------ENROLL ONLINE----------------*/
+
+.enrollonline{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(photos/studyhome4.jpg);
+	background-position: center;
+	background-size: cover;
+	padding:130px 0;
+	border-radius: 10px;
+}
+
+.enrollonline h1{
+	font-size: 34px;
+	font-weight: 400;
+	color: #fff;
+	padding-bottom: 40px;
+	letter-spacing: 1px;
+}
+
+.enrollonline a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+	border:1px solid #fff;
+	padding: 10px 30px;
+	background-color: transparent;
+	transition: 0.5s;
+}
+
+.enrollonline a:hover{
+	background-color: #e84118;
+	border-color:  #e84118;
+}
+
+/*------------------ABOUT US-------------------*/
+
+.aboutus{
+	width: 80%;
+	height: 15vh;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.aboutus h3{
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 25px;
+}
+
+.aboutus p{
+	font-size: 14px;
+	color: #4b4b4b;
+	padding-bottom: 25px;
+}
+
+.aboutus .logos a{
+	color: #e84118;
+	text-decoration: none;
+	margin: 0 13px;
+}
+
+.logos .fa{
+	padding-bottom: 25px;
+}
+
+.fa-heart-o{
+	color: #e84118;
+}

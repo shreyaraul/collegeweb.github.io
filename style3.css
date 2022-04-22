@@ -1,0 +1,200 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.mainpage{
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(photos/courses2.jpg);
+	background-size: cover;
+	position: relative;
+}
+
+.header{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header .logo img{
+	width: 300px;
+	padding-left: 45px;
+}
+
+nav{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav a::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background-color: #e84118;
+	transition: 0.5s;
+}
+
+nav a:hover::after{
+	width: 100%;
+}
+
+.courses{
+	padding: 130px 0;
+	text-align: center;
+	color:#fff;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+/*----------------COURSES-----------------*/
+
+.coursesec{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.coursesec h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.coursesec p{
+	font-size: 16px;
+	color: #4b4b4b;
+	letter-spacing: 1px;
+}
+
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.course{
+	flex-basis:31%;
+	background-color: #ffcccc;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.course h2{
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 15px;
+}
+
+.course p{
+	font-size: 14px;
+	text-align: center;
+}
+
+.course:hover{
+	box-shadow: 0px 0px 10px grey;
+}
+
+/*----------------FACILITIES----------------*/
+
+.facility{
+	width: 80%;
+	margin: 80px auto;
+	text-align: center;
+}
+
+.facility h1{
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.facility p{
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #4b4b4b;
+}
+
+.facilities{
+	flex-basis: 30%;
+	overflow: hidden;
+	text-align: left;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+.facilities img{
+	width: 100%;
+	height: 50vh;
+	border-radius: 10px;
+}
+
+.facilities:hover{
+	box-shadow: 15px 15px 15px grey;
+}
+
+.facilities h2{
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+.facilities p{
+	font-size: 14px;
+}
+
+/*--------------FOOTER---------------*/
+
+.aboutus{
+	width: 80%;
+	height: 18vh;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.aboutus h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.aboutus p{
+	font-size: 14px;
+	color: #4b4b4b;
+	margin-bottom: 25px;
+}
+
+.logos a{
+	text-decoration: none;
+	color: #e84118;
+	margin: 0 13px;
+}
+
+.love{
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.love .fa{
+	color: #e84118;
+}
+
+/*---------------ANIMATION----------------*/
+
+.animate__animated{
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

@@ -1,0 +1,154 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.mainpage{
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.6) , rgba(4,9,30,0.6)), url(photos/aboutus10.jpg);
+	background-size: cover;
+}
+
+.header{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .logo img{
+	width: 300px;
+	padding-left: 45px;
+}
+
+nav{
+	width: 500px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 80px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav a::after{
+	content:"";
+	width: 0%;
+	height: 2px;
+	display: block;
+	margin: auto;
+	background-color: #e84118;
+	transition: 0.5s;
+}
+
+nav a:hover::after{
+	width: 100%;
+}
+
+.mainpage h1{
+	text-align: center;
+	color: #fff;
+	padding: 130px 0;
+	font-size: 40px;
+	font-weight: 500;
+}
+
+ /*----------------ABOUT US MAIN CONTENT----------------*/
+
+ .maincontent{
+ 	width: 80%;
+ 	margin: 120px auto;
+ 	text-align: left;
+ }
+
+ .row{
+ 	display: flex;
+ }
+
+ .content{
+ 	flex-basis: 50%;
+ 	overflow: hidden;
+ }
+
+ .content img{
+  	width: 100%;
+  	background-size: cover;
+ }
+
+.content h1{
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.content p{
+	font-size: 14px;
+	color: #4b4b4b;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-right: 30px;
+}
+
+.content a{
+	text-decoration: none;
+	font-size: 16px;
+	color:black;
+	padding: 10px 30px;
+	border: 1px solid #e77f67;
+	background-color: #e77f67;
+	transition: 0.5s;
+}
+
+.content a:hover{
+	border: 1px solid #e84118;
+	background-color: #e84118;
+	color: #fff;
+}
+
+/*---------------FOOTER-----------------*/
+
+.aboutus{
+	width: 80%;
+	height: 18vh;
+	margin: 100px auto;
+	text-align: center;
+}
+
+.aboutus h3{
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.aboutus p{
+	font-size: 14px;
+	color: #4b4b4b;
+	margin-bottom: 25px;
+}
+
+.logos a{
+	text-decoration: none;
+	color: #e84118;
+	margin: 0 13px;
+}
+
+.love{
+	margin-top: 25px;
+	font-size: 14px;
+}
+
+.love .fa{
+	color: #e84118;
+}
+
+/*---------------ANIMATION----------------*/
+
+.animate__animated{
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
